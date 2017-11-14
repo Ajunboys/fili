@@ -10,6 +10,9 @@ Current
 
 ### Added:
 
+- [Added LogicalTableInfo interface to encapsulate table configuration](https://github.com/yahoo/fili/pull/570/files)
+    * Implemented `DefaultLogicalTableInfo` to capture defaulting currently done via constructos in LogicalTableInfo
+
 - [Backwards compatible constructor for KeyValueStoreDimension around storage strategy]()
     * Provide a backwards compatible constructor for existing implementations that don't provide storage strategies.
 
@@ -100,6 +103,10 @@ Current
 
 
 ### Changed:
+
+- [Deprecated LogicalTable constructors with just name](https://github.com/yahoo/fili/pull/570/files)
+
+- [Moved LogicalMetricInfo to config package](https://github.com/yahoo/fili/pull/570/files)
 
 - [Make shareable methods accessiable to all types of API requests](https://github.com/yahoo/fili/pull/565)
     * As non-data endpoints are behaving more like data endpoints, some methods deserve to be shared among all types of
